@@ -1,13 +1,16 @@
 require('dotenv').config();
 const express = require('express');
-const router = require('./routes/routes');
+const userRoutes = require('./routes/users.routes');
+const moviesRoutes = require('./routes/movies.routes');
+
 const apiErrorHandler = require('./error/api-error-handler');
 
 const app = express();
 
 app.use(express.json());
-app.use('/', router);
+app.use('/', userRoutes);
+app.use('/', moviesRoutes);
 
 app.use(apiErrorHandler);
 
-app.listen(8080, () => console.log('server listening on port 8080'));
+app.listen(process.env.PORT || 8080);

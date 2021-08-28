@@ -9,8 +9,10 @@
     "ecmaVersion": 12
   },
   "rules": {
+    "dot-notation": "off",
     "linebreak-style": "off",
     "comma-dangle": ["error", "never"],
+    "object-curly-newline": "off",
     "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 5 }],
     "consistent-return": "off"
   }

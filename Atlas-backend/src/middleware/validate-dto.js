@@ -1,10 +1,10 @@
 const ApiError = require('../error/api-error');
 
 function validateDto(schema) {
-  return async (req, _, next) => {
+  return async (req, res, next) => {
     try {
-      const validatedBody = await schema.validate(req.body);
-
+      const toValidate = { ...req.body, ...req.params };
+      const validatedBody = await schema.validate(toValidate);
       req.body = validatedBody;
       next();
     } catch (err) {

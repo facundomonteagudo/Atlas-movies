@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 function authToken(req, res, next) {
-  const authHeader = req.headers.authorization;
+  const authHeader = req.headers['authorization'];
 
   const token = authHeader && authHeader.split(' ')[1];
 
@@ -14,4 +14,11 @@ function authToken(req, res, next) {
   });
 }
 
-module.exports = authToken;
+function authAdmin(req, res, next) {
+  if (req.user.role !== 'admin') {
+    return res.sendStatus(403);
+  }
+  next();
+}
+
+module.exports = { authToken, authAdmin };

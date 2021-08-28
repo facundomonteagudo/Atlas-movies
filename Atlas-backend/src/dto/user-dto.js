@@ -15,17 +15,23 @@ module.exports = {
       .required()
       .min(6, 'The password must be at least 6 characters long')
       .max(20, 'The password cannot be longer than 20 characters')
-      .matches(/[a-zA-Z]/, 'Password can only contain Latin letters.')
+      .matches(
+        /[a-zA-Z0-9]/,
+        'Password can only contain Latin letters and numbers.'
+      )
   }),
 
   loginSchema: yup.object().shape({
-    email: yup.string().required().email(),
+    email: yup.string().required().email().trim(),
     password: yup
       .string()
       .trim()
       .required()
       .min(6, 'The password must be at least 6 characters long')
       .max(20, 'The password cannot be longer than 20 characters')
-      .matches(/[a-zA-Z]/, 'Password can only contain Latin letters.')
+      .matches(
+        /[a-zA-Z0-9]/,
+        'Password can only contain Latin letters and numbers.'
+      )
   })
 };
