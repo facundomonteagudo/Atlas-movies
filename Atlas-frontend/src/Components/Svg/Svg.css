@@ -1,0 +1,12 @@
+.icon {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.star {
+  margin: auto;
+  cursor: pointer;
+  align-self: center;
+}

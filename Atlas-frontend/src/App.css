@@ -1,0 +1,37 @@
+.container {
+  color: #fff;
+  text-align: center;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/bgp.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(100%);
+}
+
+.bg-animation {
+  animation: brightness ease-out 5s;
+}
+
+.blur {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+@keyframes brightness {
+  0% {
+    filter: brightness(0%);
+  }
+
+  10% {
+    filter: brightness(0%);
+  }
+
+  100% {
+    filter: brightness(100%);
+  }
+}

@@ -1,0 +1,54 @@
+.card-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 98%;
+  height: 75%;
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  overflow-y: scroll;
+}
+
+.text-catalog {
+  position: absolute;
+  top: 12%;
+  left: 12.5%;
+  padding: 0.5rem;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-style: italic;
+  display: block;
+  width: 100%;
+}
+
+.text-catalog em {
+  font-weight: 500;
+}
+
+.btn-fav-movies {
+  position: absolute;
+  top: 10%;
+  left: 120%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  width: 180px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.btn-fav-movies:hover {
+  background-color: rgba(255, 255, 255, 0.253);
+}

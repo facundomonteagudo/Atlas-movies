@@ -5,7 +5,9 @@ const {
   createMovie,
   editMovie,
   addFavMovie,
-  deleteFavMovie
+  deleteFavMovie,
+  getMovies,
+  getFavMovies
 } = require('../controller/movies.controller');
 
 const validateDto = require('../middleware/validate-dto');
@@ -17,6 +19,9 @@ const {
 
 const router = express.Router();
 
+router.get('/movies', getMovies);
+router.get('/fav-movies', authToken, getFavMovies);
+
 router.post(
   '/add-favmovie',
   authToken,
@@ -24,10 +29,9 @@ router.post(
   addFavMovie
 );
 
-router.delete(
-  '/delete-favmovie/:id',
+router.post(
+  '/delete-favmovie',
   authToken,
-  authAdmin,
   validateDto(favMovieSchema),
   deleteFavMovie
 );
@@ -41,7 +45,7 @@ router.post(
 );
 
 router.put(
-  '/edit-movie/:id',
+  '/edit-movie',
   authToken,
   authAdmin,
   validateDto(editMovieSchema),

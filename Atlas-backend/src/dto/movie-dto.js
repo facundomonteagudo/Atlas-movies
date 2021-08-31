@@ -15,7 +15,6 @@ module.exports = {
   }),
 
   favMovieSchema: yup.object().shape({
-    idUser: yup.number().min(1).required(),
-    id: yup.number().min(1).required()
+    idMovie: yup.number().min(1).required()
   })
 };

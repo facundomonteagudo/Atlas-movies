@@ -45,7 +45,11 @@ const loginUser = async (req, res) => {
       const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN);
       res
         .status(200)
-        .json({ message: 'Login successful!', token: accessToken });
+        .json({
+          message: 'Login successful!',
+          token: accessToken,
+          role: user.role
+        });
     } else {
       res.status(400).json({ message: 'Wrong credentials' });
     }

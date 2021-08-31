@@ -1,0 +1,162 @@
+.box {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  width: 40rem;
+  height: 18rem;
+  overflow: hidden;
+  animation: expand 1s ease-out;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  width: 180px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.253);
+}
+
+.menu-text {
+  margin: 1rem 0 0.5rem;
+}
+
+.fadeIn {
+  animation: fadeIn 5s ease-out;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+}
+
+.fadeOut {
+  animation: fadeOut 2s ease-out;
+}
+
+@keyframes expand {
+  0% {
+    height: 0rem;
+  }
+
+  45% {
+    height: 0rem;
+  }
+
+  100% {
+    height: 18rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  10% {
+    pointer-events: none;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  10% {
+    pointer-events: none;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  10% {
+    pointer-events: none;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  10% {
+    pointer-events: none;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  10% {
+    pointer-events: none;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

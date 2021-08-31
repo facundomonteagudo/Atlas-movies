@@ -1,0 +1,110 @@
+.login-content {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(27, 31, 34, 0.85);
+  border-radius: 10px;
+  width: 600px;
+  height: 400px;
+  margin-top: 180px;
+  animation: fadeIn 1s ease-out;
+  backdrop-filter: blur(1px);
+}
+
+.btn-cancel {
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+  align-self: flex-end;
+  justify-self: flex-start;
+}
+
+.btn-cancel:hover {
+  background-color: rgba(255, 255, 255, 0.253);
+}
+
+.title-text {
+  border-bottom: 1px solid;
+}
+
+form .input-info {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  transition-duration: 0.25s;
+}
+
+.form-error {
+  color: red;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+form .input-info:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+form .input-info:focus {
+  background-color: white;
+  width: 300px;
+  color: #050505;
+}
+
+form button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background-color: transparent;
+  border: 1px solid;
+  padding: 11px 15px;
+  color: #fff;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: 280px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+form button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+body ::-webkit-input-placeholder {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(185, 185, 185);
+  font-weight: 300;
+}
+body :-moz-placeholder {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(185, 185, 185);
+  opacity: 1;
+  font-weight: 300;
+}
