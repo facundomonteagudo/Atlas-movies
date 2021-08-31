@@ -93,6 +93,7 @@ npm i // yarn
 ```
 # MySQL Schema
 
+![database](https://user-images.githubusercontent.com/56374617/131589004-1f2db6bf-95c3-41ae-807f-2ee5526f3d4d.PNG)
 
 
 
