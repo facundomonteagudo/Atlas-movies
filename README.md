@@ -92,3 +92,4 @@ cd ./Atlas-backend/
 npm i // yarn 
 ```
 # MySQL Schema
+![database](https://user-images.githubusercontent.com/56374617/131589654-2f8b8e5c-60ea-4106-9efd-bb138952f231.PNG)
