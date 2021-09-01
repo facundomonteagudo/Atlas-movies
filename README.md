@@ -94,7 +94,8 @@ npm i // yarn
 # MySQL Schema
 ![database](https://user-images.githubusercontent.com/56374617/131589654-2f8b8e5c-60ea-4106-9efd-bb138952f231.PNG)
 
-# S![home](https://user-images.githubusercontent.com/56374617/131592132-3c7f4208-43cb-416e-8415-d5f97fa5a974.PNG)
+# Screenshots
+![home](https://user-images.githubusercontent.com/56374617/131592132-3c7f4208-43cb-416e-8415-d5f97fa5a974.PNG)
 ![sign in](https://user-images.githubusercontent.com/56374617/131592155-4128c689-4473-4bf8-b8f9-a68e3c955e03.PNG)
 ![add-movie](https://user-images.githubusercontent.com/56374617/131592172-64fdca4f-cf52-4eb4-949a-e10cac99a4c9.PNG)
-creenshots
+
